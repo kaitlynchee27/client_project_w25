@@ -4,30 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- Link to the stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
     <title>Finding Resources in Times of Crisis</title>
 </head>
 <body>
 
     <header>
-            <a href = "">Skip to Main Content</a>
+            <a class = "skip" a href = "">Skip to Main Content</a>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "page_1.html">Academic Support</a></li>
                 <li><a href = "page_2.html">Extracurriculars & Volunteering</a></li>
-                <li><a href = "page_3.html">Wellness & Crisis Support</a></li>
+                <li><a href = "page_3.html" class="active">Wellness & Crisis Support</a></li>
             </ul>
         </nav>
-        <h1>Finding Resources in Times of Crisis</h1>
+        <img class = "umsi-logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <h1>Wellness & Crisis Support</h1>
 
     </header>
-    <main>
-        <div>
+    <main class="container" id = "main">
+        <section tabindex= "0" class="wellness-introduction">
             <p>We want to provide support for our students through all facets of their lives, including times of crisis. 
-                Below are some resources to help you through difficult situations.</p>
-        </div>
+            Below are some resources to help you through difficult situations.</p>
+        </section>
 
-        <section>
+        <section tabindex= "0" class="CAPS">
             <h2><a href="https://caps.umich.edu/">Counseling and Psychology Services</a></h2>
             <p>Michigan's Counseling and Psychology Services (CAPS) is committed to creating an environment based on our values of multicultural,
             multi-disciplinary and multi-theoretical practices that allow our diverse student body to access care, receive high quality services and take positive pathways to mental health. </p>
@@ -47,18 +52,21 @@
             <h3>Support Groups:</h3>
             <p> Join peer support groups for shared experiences and collective coping strategies.</p>
         </article>
-
         </section>
 
-        <section>
+        <section tabindex= "0" class="basic-needs">
             <h2><a href="https://basicneeds.studentlife.umich.edu/">Basic Needs</a></h2>
             <p>Whether you have a housing question, health care concern or emergency funding need, the resources on Michigan's Basic Needs site will help you navigate campus life at U-M.</p>
             <img src="images/Diag.jpg" alt="People walking across the tents in the University of Michigan Diag">
         </section>
     </main>
 
-    <footer>
-        <p>UMSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+    <footer tabindex= "0" class="last">
+        <p> <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p> <br> School of Information<br>
+            University of Michigan<br>
+            105 S State St.<br>
+            Ann Arbor, MI 48109-1285</p>
     </footer>
     
 </body>

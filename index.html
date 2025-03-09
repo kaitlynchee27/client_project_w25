@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- Link to the stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
     <title>Student Success Portal</title>
 </head>
 <body>
-
     <header>
-    <a href = "">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+    <a class = "skip" href = "">Skip to Main Content</a>
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
+                <li><a href = "index.html" class="active">Home</a></li>
                 <li><a href = "page_1.html">Academic Support</a></li>
                 <li><a href = "page_2.html">Extracurriculars & Volunteering</a></li>
                 <li><a href = "page_3.html">Wellness & Crisis Support</a></li>
             </ul>
         </nav>
+        <img class = "umsi-logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <h1>Student Success Portal</h1>
 
     </header>
 
-    <main>
-        <section>
+    <main class="container" id = "main">
+        <section tabindex= "0" class="welcome">
             <h2>Welcome to the UM Undergrad Success Navigator</h2>
             <p> Your Comprehensive Guide to Resources for Undergraduate School Success</p>
             <p>This guide is set up to help you be successful inside and outside of the classroom and we have included the following resources throughout our site:</p>
@@ -36,13 +39,13 @@
             </ol>
         </section>
 
-        <section>
+        <section tabindex= "0" class="academic-resources">
             <h2>Academic Resources</h2>
             <p>At the University of Michigan School of Information (UMSI), we are committed to supporting our students' academic success by offering a wide array of resources and services. The following are a few of the resources offered to help you reach your full academic potential.</p>
             <a href = "page_1.html">Learn more about academic support at Michigan</a>
         </section>
 
-        <section>
+        <section tabindex= "0" class="physical-health"> 
             <h2>Physical Health</h2>
             <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
             <article>
@@ -58,26 +61,30 @@
             </article>
         </section>
         
-        <section>
+        <section tabindex= "0" class="mental-health">
             <h2>Mental Health</h2>
             <p>Maintaining your mental well-being is crucial for thriving at school.</p>
             <a href = "page_3.html">Learn more about mental health support at Michigan</a>
         </section>
 
-        <section>
+        <section tabindex= "0" class="outside-classroom">
             <h2>Life Outside the Classroom</h2>
             <p>Undergraduate school is more than just academics. It's important to cultivate a balanced life.</p>
             <a href = "page_2.html">Learn more about extracurriculars at Michigan</a>
         </section>
         
-        <section>
+        <section tabindex= "0" class="contact">
             <h2>Contact</h2>
             <p>If you have any further questions about UMSI students' resources, please contact us at: umsi.advising.msi@umich.edu</p>
         </section>
     </main>
 
-    <footer>
-        <p>UMSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+    <footer tabindex= "0" class="last">
+        <p> <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p> <br> School of Information<br>
+            University of Michigan<br>
+            105 S State St.<br>
+            Ann Arbor, MI 48109-1285</p>
     </footer>
 </body>
 </html>

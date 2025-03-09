@@ -4,26 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- Link to the stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
     <title>Extracurriculars & Volunteering</title>
 </head>
 <body>
 
     <header>
-            <a href = "">Skip to Main Content</a>
+            <a class = "skip" a href = "">Skip to Main Content</a>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "page_1.html">Academic Support</a></li>
-                <li><a href = "page_2.html">Extracurriculars & Volunteering</a></li>
+                <li><a href = "page_2.html" class="active">Extracurriculars & Volunteering</a></li>
                 <li><a href = "page_3.html">Wellness & Crisis Support</a></li>
             </ul>
         </nav>
+        <img class = "umsi-logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <h1>Extracurriculars & Volunteering</h1>
 
     </header>
-    <main>
-        <section id="life-outside-classroom">
+    <main class="container" id = "main">
+        <section tabindex= "0" class="extracurriculars-introduction">
             <p>Undergraduate school is about more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
+        </section>
+        <section tabindex= "0" class="extracurriculars" id="life-outside-classroom">
             <h2>Extracurriculars</h2>
             <img src="images/Extracurriculars.jpg" alt="Three girls smiling at a Michigan football game">
             <ul>
@@ -33,17 +40,22 @@
             </ul>
         </section>
 
-        <section>
+        <section tabindex= "0" class="volunteering">
             <h2>Volunteering</h2>
             <p>There are many opportunities for volunteering at Michigan. Below is an amazing opportunity to help with local food pantries.</p>
             
-            <h2><a href="https://www.google.com/url?q=https://mbc.studentlife.umich.edu/&sa=D&source=docs&ust=1737750075661477&usg=AOvVaw2khG3Sl6NfPahCDCERVFYA">Food Pantry</a></h2>
+            <h3><a href="https://www.google.com/url?q=https://mbc.studentlife.umich.edu/&sa=D&source=docs&ust=1737750075661477&usg=AOvVaw2khG3Sl6NfPahCDCERVFYA">Food Pantry</a></h3>
             <p>College students and staff are experiencing food insecurity at alarming rates. The Maize and Blue Cupboard provides an immediate and comprehensive response for the U-M community.</p>
         </section>
     
     </main>
-    <footer>
-        <p>UMSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+
+    <footer tabindex= "0" class="last">
+        <p> <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p> <br> School of Information<br>
+            University of Michigan<br>
+            105 S State St.<br>
+            Ann Arbor, MI 48109-1285</p>
     </footer>
     
 </body>
