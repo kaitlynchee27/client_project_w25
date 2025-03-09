@@ -1,0 +1,218 @@
+/* Skip to Main*/
+
+.skip{
+    top: -60px; 
+        /* move figure off screen until tabbed */
+    position: absolute;
+}
+
+.skip:focus{
+    display: inline-block;
+    position: absolute;
+    top: 80px;
+        /* move back on screen */
+}
+
+/* Body General Styling */
+h1{
+    font-size: 4vh;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+body {
+    font-family: "Montserrat", "Nunito Sans", "Oswald";
+    padding: 0% 1% 0% 1%;
+    color: #00274c;
+    font-size: 2.5vh;
+}
+
+h2 {
+    font-size: 3.5vh;
+    margin: 3% 0 2% 0;
+}
+
+h3 {
+    margin: 2% 0 1% 0;
+}
+
+ol{
+    margin: 1%;
+    padding: 0% 3% 0% 3%;
+}
+
+/* links */
+a{
+    display: block;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Nav General Styling*/
+
+nav{
+    display: flex;
+    background-color: #00274c;
+    padding: 1%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a{
+    font-size: 22px;
+    text-decoration: none;
+    margin: 0 15px 1px;
+}
+
+nav a{
+    color:#FFCB05;
+    text-align: center;
+}
+
+.last a{
+    color: white;
+}
+
+/* Nav Active Page Styling */
+
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #FFCB05;
+    color:#00274c;
+}
+
+/* Grid General*/
+.container{
+    /* grid */
+    display: grid;
+    grid-template-columns: 3% 94% 3%;
+}
+
+.container>*{
+    grid-column: 2/ span 1;
+}
+
+.last{
+    display: grid;
+    grid-template-columns: 3% 94% 3%;
+}
+
+.last p{
+    grid-column: 2/ span 1;
+}
+
+/* Grid Homepage */
+.welcome{
+    grid-row: 1/ span 1;
+}
+
+.academic-resources{
+    grid-row: 2/ span 1;
+}
+
+.physical-health{
+    grid-row: 3/ span 1;
+}
+
+.mental-health{
+    grid-row: 4/ span 1; 
+}
+
+.outside-classroom{
+    grid-row: 5/ span 1; 
+}
+
+.contact{
+    grid-row: 6/ span 1; 
+}
+
+/* Grid Academic Resources */
+
+.academic-introduction{
+    grid-row: 1/ span 1;
+    text-align: center;
+}
+
+.advising{
+    grid-row: 2/ span 1;
+}
+
+.library{
+    grid-row: 3/span 1;
+}
+
+.tutoring{
+    grid-row: 4/ span 1;
+}
+
+.DEI{
+    grid-row: 5/ span 1;
+}
+
+/* Grid Extracurriculars and Volunteering */
+
+.extracurriculars-introduction{
+    grid-row: 1/ span 1;
+    text-align: center;
+}
+.extracurriculars{
+    grid-row: 2/ span 1;
+}
+
+ul{
+    grid-column: 2/span 1;
+    list-style-position: inside;
+}
+
+.volunteering{
+    grid-row: 3/ span 1;
+}
+/* Grid Wellness and Crisis Support */
+
+.wellness-introduction{
+    grid-row: 1/ span 1;
+    text-align: center;
+}
+
+.CAPS{
+    grid-row: 2/ span 1;
+}
+
+.basic-needs{
+    grid-row: 3/ span 1;
+}
+
+/* Footer */
+footer{
+    margin: 1% 0 1% 0;
+    padding: 6% 1% 6% 1%;
+    background-color:#00274c;
+    color: white;
+}
+
+/* Images */
+
+.umsi-logo{
+    display: block;
+    margin: auto;
+    padding: 2%;
+    width:15%;
+    height: auto;
+}
+
+img{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+
+
