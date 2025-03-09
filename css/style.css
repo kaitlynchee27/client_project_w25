@@ -76,6 +76,10 @@ nav a{
     text-align: center;
 }
 
+.last a{
+    color: white;
+}
+
 /* Nav Active Page Styling */
 
 nav ul li a.active {
