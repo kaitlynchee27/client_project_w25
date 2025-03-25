@@ -45,10 +45,6 @@ ol{
 /* links */
 a{
     display: block;
-    text-decoration: none;
-}
-
-a:hover{
     text-decoration: underline;
 }
 
@@ -214,5 +210,18 @@ img{
     width: 100%;
 }
 
+/* DESKTOP VIEW */
 
+@media screen and (min-width: 900px){
+    
+    /* Homepage Desktop */
+    .container{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
 
+    .welcome{
+        grid-column: 1/ span 3;
+    }
+    
+}
