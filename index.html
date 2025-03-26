@@ -11,18 +11,18 @@
 </head>
 <body>
     <header>
-    <a class = "skip" href = "">Skip to Main Content</a>
+    <a class = "skip" href = "#main">Skip to Main Content</a>
         <nav>
             <ul>
-                <li><a href = "index.html" class="active">Home</a></li>
-                <li><a href = "page_1.html">Academic Support</a></li>
-                <li><a href = "page_2.html">Extracurriculars & Volunteering</a></li>
-                <li><a href = "page_3.html">Wellness & Crisis Support</a></li>
+                <li><a href = "index.html" class="active" id="home">Home</a></li>
+                <li><a href = "academic_support.html" id="academic">Academic Support</a></li>
+                <li><a href = "extracurriculars_and_volunteering.html" id="extracurriculars">Extracurriculars & Volunteering</a></li>
+                <li><a href = "wellness_and_crisis.html" id="wellness">Wellness & Crisis Support</a></li>
             </ul>
         </nav>
         <img class = "umsi-logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <h1>Student Success Portal</h1>
-
+        
     </header>
 
     <main class="container" id = "main">
@@ -42,7 +42,7 @@
         <section tabindex= "0" class="academic-resources">
             <h2>Academic Resources</h2>
             <p>At the University of Michigan School of Information (UMSI), we are committed to supporting our students' academic success by offering a wide array of resources and services. The following are a few of the resources offered to help you reach your full academic potential.</p>
-            <a href = "page_1.html">Learn more about academic support at Michigan</a>
+            <a href = "academic_support.html">Learn more about academic support at Michigan</a>
         </section>
 
         <section tabindex= "0" class="physical-health"> 
@@ -51,40 +51,57 @@
             <article>
                 <h3>University Health Service (UHS)</h3>
                 <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
-                <img src="images/UHS.jpg" alt="University Health Services building">
+                <div class="image-container">
+                    <img src="images/UHS.jpg" alt="University Health Services building">
+                    <div class="overlay"></div>
+                    <div class="text-overlay">Located at 207 Fletcher St, Ann Arbor</div>
+                </div>
             </article>
 
             <article>
                 <h3>Recreational Sports</h3>
                 <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
-                <img src="images/RecreationalSports.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
+                <div class="image-container">
+                    <img src="images/RecreationalSports.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
+                    <div class="overlay"></div>
+                    <div class="text-overlay">Intramural Building: Located at 606 E Hoover Ave, Ann Arbor</div>
+                </div>
             </article>
         </section>
         
         <section tabindex= "0" class="mental-health">
             <h2>Mental Health</h2>
             <p>Maintaining your mental well-being is crucial for thriving at school.</p>
-            <a href = "page_3.html">Learn more about mental health support at Michigan</a>
+            <a href = "wellness_and_crisis.html">Learn more about mental health support at Michigan</a>
         </section>
 
         <section tabindex= "0" class="outside-classroom">
             <h2>Life Outside the Classroom</h2>
             <p>Undergraduate school is more than just academics. It's important to cultivate a balanced life.</p>
-            <a href = "page_2.html">Learn more about extracurriculars at Michigan</a>
+            <a href = "extracurriculars_and_volunteering.html">Learn more about extracurriculars at Michigan</a>
         </section>
         
         <section tabindex= "0" class="contact">
             <h2>Contact</h2>
             <p>If you have any further questions about UMSI students' resources, please contact us at: umsi.advising.msi@umich.edu</p>
         </section>
-    </main>
 
+    </main>
     <footer tabindex= "0" class="last">
         <p> <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
         <p> <br> School of Information<br>
             University of Michigan<br>
             105 S State St.<br>
             Ann Arbor, MI 48109-1285</p>
+        <p>© Copyrights <span id="year"></span></p> 
+            <!-- Source: https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
     </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+        <!-- Source: https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
+    
+    <script src="js/java.js"></script>
 </body>
 </html>

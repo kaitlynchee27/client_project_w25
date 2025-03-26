@@ -4,6 +4,7 @@
     top: -60px; 
         /* move figure off screen until tabbed */
     position: absolute;
+    z-index: 10;
 }
 
 .skip:focus{
@@ -11,6 +12,7 @@
     position: absolute;
     top: 80px;
         /* move back on screen */
+    z-index: 10;
 }
 
 /* Body General Styling */
@@ -62,7 +64,7 @@ nav ul{
 }
 
 nav ul li a{
-    font-size: 22px;
+    font-size: 2.5vh;
     text-decoration: none;
     margin: 0 15px 1px;
 }
@@ -166,6 +168,7 @@ nav ul li a.active {
 ul{
     grid-column: 2/span 1;
     list-style-position: inside;
+    z-index: 11;
 }
 
 .volunteering{
@@ -213,15 +216,91 @@ img{
 /* DESKTOP VIEW */
 
 @media screen and (min-width: 900px){
-    
-    /* Homepage Desktop */
-    .container{
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+    /* nav links */
+    nav ul li a{
+        /* larger font */
+        font-size: 2.8vh;
     }
 
-    .welcome{
-        grid-column: 1/ span 3;
+    /* glow around links when mouse hovered */
+    a:hover{
+        text-shadow: 0px 2px 5px #FFCB05;
+    }
+
+    /* larger logo */
+    .umsi-logo{
+        width:25%;
+    }
+
+    /* transition h2s */
+    h2{
+        transform: translateX(-100%);
+        opacity: 0;
+        background-color: #f0ecec; 
+            /* color from UM Ross website - not in color guide */
+        padding: 1vh;
+        transition: transform 2s ease, opacity 0.5s ease;
     }
     
+    h2.visible {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    /* Adding text when hovering over some images */
+    .image-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* adding text */
+    .text-overlay {
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+            /* centering */
+            /* source: https://www.w3schools.com/cssref/css_pr_translate.php */
+        color: #00274c; 
+        font-size: 3.2vh; 
+        font-weight: bold; 
+        opacity: 0; /* text hidden */
+        transition: opacity 0.3s ease; /* fade-in effect */
+    }
+
+    .image-container .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8); /* white overlay */
+        opacity: 0; /* no overlay to start */
+        transition: opacity 0.3s ease; /* fade-in effect */
+    }
+    
+    /* text visible and white overlay */
+    .image-container:hover .text-overlay {
+        opacity: 1; 
+    }
+    .image-container:hover .overlay {
+        opacity: 1; 
+    }
 }
+
+/* prefers reduced motion */
+
+@media (prefers-reduced-motion: reduce){
+    
+    h2 {
+        transition: none; 
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}
+  
